@@ -64,19 +64,75 @@
 		0424EB5220BEF89000E15E46 /* WakyZzz */ = {
 			isa = PBXGroup;
 			children = (
-				0424EB7020C038AE00E15E46 /* sound.mp3 */,
+				1305254223FDC7120031C393 /* Extension */,
+				1305253F23FDC58D0031C393 /* Ressources */,
+				1305254123FDC5D00031C393 /* Storyboards */,
+				1305253E23FDC57C0031C393 /* Controller */,
+				1305253C23FDC5720031C393 /* Model */,
+				1305253D23FDC5770031C393 /* View */,
 				0424EB6820BEF93F00E15E46 /* Alarm.swift */,
 				0424EB6A20BEF96400E15E46 /* Action.swift */,
 				0424EB5320BEF89000E15E46 /* AppDelegate.swift */,
 				0424EB5520BEF89000E15E46 /* AlarmsViewController.swift */,
 				0424EB6C20BF022900E15E46 /* AlarmTableViewCell.swift */,
 				0424EB6E20BF0FAE00E15E46 /* AlarmViewController.swift */,
-				0424EB5720BEF89000E15E46 /* Main.storyboard */,
-				0424EB5A20BEF89100E15E46 /* Assets.xcassets */,
-				0424EB5C20BEF89100E15E46 /* LaunchScreen.storyboard */,
 				0424EB5F20BEF89100E15E46 /* Info.plist */,
 			);
 			path = WakyZzz;
+			sourceTree = "<group>";
+		};
+		1305253C23FDC5720031C393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1305253D23FDC5770031C393 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1305253E23FDC57C0031C393 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1305253F23FDC58D0031C393 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				1305254023FDC5970031C393 /* Sounds */,
+				0424EB5A20BEF89100E15E46 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		1305254023FDC5970031C393 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0424EB7020C038AE00E15E46 /* sound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		1305254123FDC5D00031C393 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0424EB5C20BEF89100E15E46 /* LaunchScreen.storyboard */,
+				0424EB5720BEF89000E15E46 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1305254223FDC7120031C393 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -301,7 +357,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KK37S6N26;
 				INFOPLIST_FILE = WakyZzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +376,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KK37S6N26;
 				INFOPLIST_FILE = WakyZzz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
