@@ -29,8 +29,6 @@ class CDManager {
     }
     
     public func addOrUpdateAlarm(_ alarm: Alarm) {
-
-        print("::: addAlarm \(alarm.id) \(alarm.enabled)")
         
         let context = AppDelegate.context
         
@@ -67,6 +65,20 @@ class CDManager {
     }
     
     // MARK:- Private Methods
+    
+    public func getAllAlarmWith(id: String, in context: NSManagedObjectContext) -> [CDAlarm] {
+        
+        let fetchRequest: NSFetchRequest<CDAlarm> = CDAlarm.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "id = %@", id)
+        
+        var match: [CDAlarm] = []
+        do {
+            match = try context.fetch(fetchRequest)
+        } catch {
+            print("DATABASE ERROR")
+        }
+        return match
+    }
     
     public func getAlarmWith(id: String, in context: NSManagedObjectContext) -> CDAlarm? {
         

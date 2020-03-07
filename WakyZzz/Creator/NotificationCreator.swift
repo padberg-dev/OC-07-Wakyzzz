@@ -9,6 +9,7 @@
 import Foundation
 import NotificationCenter
 
+// Struct for passing data into Notification
 struct NotificationData {
     
     let notificationIdentifier: String
@@ -27,12 +28,15 @@ enum SoundType: String {
 
 class NotificationCreator {
     
+    // Enum for differentiating which notification needs to be created
     enum NotificationType {
         case notification(alarm: Alarm, weekDay: Int?)
         case snooze(count: Int)
         case deferMore
     }
     
+    // Enum for differentiating which action needs to be added
+    // String name will be used to compare
     enum NotificationActionType: String {
         case snooze
         case secondSnooze
@@ -46,7 +50,7 @@ class NotificationCreator {
     // MARK: - Public Methods
     
     public func getSound(type: SoundType, volume: Float) -> UNNotificationSound {
-        print("::: \(type.rawValue)")
+        
         return UNNotificationSound.criticalSoundNamed(UNNotificationSoundName(string: type.rawValue) as String, withAudioVolume: volume)
     }
     
@@ -59,6 +63,7 @@ class NotificationCreator {
         return array
     }
     
+    // It creates an action with title
     private func createAction(of type: NotificationActionType) -> UNNotificationAction {
         
         var title = ""

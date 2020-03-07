@@ -13,6 +13,7 @@ class NManager: NSObject {
     
     static let shared = NManager()
     
+    // Will be used as a connection to tableView
     public weak var delegate: NManagerDelegate?
     
     private let notificationCenter = UNUserNotificationCenter.current()
@@ -54,12 +55,10 @@ class NManager: NSObject {
     
     public func addAlarmNotification(_ alarm: Alarm) {
         
-        print("::: Add New Alarm Notification")
-        
-        //set weekday int to sunday for loop
+        // For default calendar sunday is first day
         var weekDay = 1
         
-        //if one time set day as today
+        // Check if this is one time alarm
         if alarm.repeating == "One time alarm" {
             scheduleNotification(ofType: .notification(alarm: alarm, weekDay: nil))
         } else {
@@ -75,11 +74,9 @@ class NManager: NSObject {
     // MARK:- Private Methods
     
     private func cleanMissedNotifications() {
-        //catch any notification that ran when app was not active and user did not respond
+        // Clear any notification that user did not respond to
         
         notificationCenter.getDeliveredNotifications { notifications in
-        
-            print("::: Missed Notifications: \(notifications.count)")
             
             DispatchQueue.main.async {
                 notifications.forEach {
@@ -92,9 +89,8 @@ class NManager: NSObject {
     private func removePendingAlarmNotification(withId id: String, completion: @escaping () -> Void) {
         
         notificationCenter.getPendingNotificationRequests { requests in
+            // Contains as the notifications id have extra Int at the end of the ID
             let array = requests.filter { $0.identifier.contains(id) }
-            
-            print("::: removePendingAlarm arrayCount: \(array.count)")
             
             array.forEach {
                 self.notificationCenter.removePendingNotificationRequests(withIdentifiers: [$0.identifier])
@@ -107,20 +103,19 @@ class NManager: NSObject {
     
     private func disableOneTimeAlarm(id: String) {
         
-        print("::: DisablingOneTimeAlarm \(id)")
-        
         let context = AppDelegate.context
         
         if let alarm = CDManager.shared.getAlarmWith(id: id, in: context) {
-            //check all array items are false
+            
+            // If it contains true -> Not one time alarm
             if !alarm.transformToAlarm().repeatDays.contains(true) {
-                //update bool for enabled on alarm
                 alarm.enabled = false
                 try! context.save()
             }
         }
     }
     
+    // It creates notification based on type
     private func scheduleNotification(ofType type: NotificationCreator.NotificationType, categoryIdentifier: String? = nil, contentIdentifier: String? = nil) {
         switch type {
             
@@ -150,6 +145,7 @@ class NManager: NSObject {
             createNotification(data: data, trigger: trigger, actions: [.snooze, .delete])
             
         case .snooze(count: let count):
+            // It varies depending on count -> only == 1 or everything else implemented
             
             let data = NotificationData(
                 notificationIdentifier: contentIdentifier ?? "",
@@ -164,6 +160,7 @@ class NManager: NSObject {
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
             
             createNotification(data: data, trigger: trigger, actions: count == 1 ? [.secondSnooze, .delete] : [.textFriend, .textFamily, .deferMore])
+            
         case .deferMore:
             
             let data = NotificationData(
@@ -181,6 +178,7 @@ class NManager: NSObject {
         }
     }
     
+    // Adjustable notification creator
     private func createNotification(data: NotificationData, trigger: UNNotificationTrigger, actions: [NotificationCreator.NotificationActionType]) {
         
         let content = UNMutableNotificationContent()
@@ -198,7 +196,6 @@ class NManager: NSObject {
                 print("Error \(error.localizedDescription)")
             }
         }
-        
         let category = UNNotificationCategory(
             identifier: data.categoryIdentifier,
             actions: creator.getActions(types: actions),

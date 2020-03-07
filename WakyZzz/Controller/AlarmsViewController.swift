@@ -23,7 +23,7 @@ class AlarmsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("::: \(self).viewDidLoad()")
+        
         setupDelegates()
         reloadData()
     }
@@ -42,10 +42,6 @@ class AlarmsViewController: UIViewController {
         let cdAlarms = CDManager.shared.loadAllAlarms()
         alarms = cdAlarms.map { $0.transformToAlarm() }
         sortAlarms()
-        alarms.forEach {
-            print("::: id: \($0.id)")
-            
-        }
         tableView.reloadData()
     }
     

@@ -16,7 +16,6 @@ class CDAlarm: NSManagedObject {
     public func updateWith(alarm: Alarm) {
         
         self.id = alarm.id
-        print("\(self.enabled) - \(alarm.enabled)")
         self.enabled = alarm.enabled
         self.time = Int32(alarm.time)
         self.monday = alarm.repeatDays[1]
