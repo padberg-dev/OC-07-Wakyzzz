@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-protocol AlarmCellDelegate {
-    func alarmCell(_ cell: AlarmTableViewCell, enabledChanged enabled: Bool)
-}
-
 class AlarmTableViewCell: UITableViewCell {
     
     @IBOutlet weak var captionLabel: UILabel!

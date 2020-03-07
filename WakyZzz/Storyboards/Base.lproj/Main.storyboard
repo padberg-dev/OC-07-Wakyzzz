@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nEb-eO-71f">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,28 +12,28 @@
             <objects>
                 <viewController storyboardIdentifier="AlarmsViewController" id="BYZ-38-t0r" customClass="AlarmsViewController" customModule="WakyZzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-8g-aiN">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AlarmCell" rowHeight="120" id="VSk-wo-5zH" customClass="AlarmTableViewCell" customModule="WakyZzz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VSk-wo-5zH" id="UFv-lQ-eKE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKQ-CR-bhd">
-                                                    <rect key="frame" x="15" y="11" width="290" height="58"/>
+                                                    <rect key="frame" x="20" y="11" width="319" height="58"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeating " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCN-if-4O3">
-                                                    <rect key="frame" x="15" y="88.5" width="345" height="24"/>
+                                                    <rect key="frame" x="15" y="88.5" width="384" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="33X-OH-81t"/>
                                                     </constraints>
@@ -42,7 +42,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOW-6I-KN4">
-                                                    <rect key="frame" x="313" y="24.5" width="49" height="31"/>
+                                                    <rect key="frame" x="347" y="24.5" width="49" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="47" id="iZG-rw-wMe"/>
                                                         <constraint firstAttribute="height" constant="31" id="itg-jx-VDP"/>
@@ -100,29 +100,39 @@
         <!--Alarm-->
         <scene sceneID="KD6-Lg-nhl">
             <objects>
-                <viewController storyboardIdentifier="AlarmViewController" id="ZR4-jh-IrU" customClass="AlarmViewController" customModule="WakyZzz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlarmViewController" id="ZR4-jh-IrU" customClass="EditAlarmViewController" customModule="WakyZzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XqB-HW-TYn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-rL-ath">
-                                <rect key="frame" x="0.0" y="44" width="375" height="200"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-rL-ath">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="cbv-5e-JDX"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="cbv-5e-JDX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="cbv-5e-JDX"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="datePickerValueChanged:" destination="ZR4-jh-IrU" eventType="valueChanged" id="B2A-rL-BzN"/>
                                 </connections>
                             </datePicker>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="kcO-Xc-lqv">
-                                <rect key="frame" x="0.0" y="244" width="375" height="423"/>
+                                <rect key="frame" x="0.0" y="288" width="414" height="574"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DayOfWeekCell" id="Zh0-E4-lCB">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zh0-E4-lCB" id="NXg-t2-fw3">
-                                            <rect key="frame" x="0.0" y="0.0" width="336" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -136,10 +146,46 @@
                             <constraint firstItem="yhU-rL-ath" firstAttribute="leading" secondItem="l9z-Ml-6Fk" secondAttribute="leading" id="JMi-AQ-7qM"/>
                             <constraint firstItem="yhU-rL-ath" firstAttribute="trailing" secondItem="l9z-Ml-6Fk" secondAttribute="trailing" id="S8Y-hd-XS2"/>
                             <constraint firstItem="kcO-Xc-lqv" firstAttribute="trailing" secondItem="l9z-Ml-6Fk" secondAttribute="trailing" id="buJ-0e-xB1"/>
+                            <constraint firstItem="kcO-Xc-lqv" firstAttribute="leading" secondItem="yhU-rL-ath" secondAttribute="trailing" id="cdF-bR-Cg0"/>
                             <constraint firstItem="yhU-rL-ath" firstAttribute="top" secondItem="l9z-Ml-6Fk" secondAttribute="top" id="gwa-om-jd7"/>
                             <constraint firstItem="kcO-Xc-lqv" firstAttribute="leading" secondItem="l9z-Ml-6Fk" secondAttribute="leading" id="h4A-7A-Duy"/>
+                            <constraint firstItem="kcO-Xc-lqv" firstAttribute="top" secondItem="l9z-Ml-6Fk" secondAttribute="top" id="lSN-KY-FIl"/>
+                            <constraint firstItem="l9z-Ml-6Fk" firstAttribute="bottom" secondItem="yhU-rL-ath" secondAttribute="bottom" id="mzt-t5-Heo"/>
+                            <constraint firstItem="yhU-rL-ath" firstAttribute="width" secondItem="XqB-HW-TYn" secondAttribute="width" multiplier="0.5" constant="1" id="xjC-nm-vup">
+                                <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l9z-Ml-6Fk"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mzt-t5-Heo"/>
+                                <exclude reference="xjC-nm-vup"/>
+                                <exclude reference="cdF-bR-Cg0"/>
+                                <exclude reference="lSN-KY-FIl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="mzt-t5-Heo"/>
+                                <exclude reference="S8Y-hd-XS2"/>
+                                <include reference="xjC-nm-vup"/>
+                                <exclude reference="7Ae-49-8iu"/>
+                                <include reference="cdF-bR-Cg0"/>
+                                <exclude reference="h4A-7A-Duy"/>
+                                <include reference="lSN-KY-FIl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="mzt-t5-Heo"/>
+                                <exclude reference="S8Y-hd-XS2"/>
+                                <include reference="xjC-nm-vup"/>
+                                <exclude reference="7Ae-49-8iu"/>
+                                <include reference="cdF-bR-Cg0"/>
+                                <exclude reference="h4A-7A-Duy"/>
+                                <include reference="lSN-KY-FIl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Alarm" id="bOH-f8-i9z">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="HUd-gJ-Ndi">
@@ -160,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vC8-4Q-tyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="133"/>
+            <point key="canvasLocation" x="2625.6696428571427" y="131.8840579710145"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M85-su-oDJ">
@@ -168,7 +214,7 @@
                 <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nEb-eO-71f" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KTN-u7-RuQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -186,7 +232,7 @@
                 <navigationController storyboardIdentifier="DetailNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Ey7-6N-FMc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u8J-0W-HsQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

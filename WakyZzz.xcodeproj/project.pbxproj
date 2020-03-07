@@ -15,9 +15,29 @@
 		0424EB6920BEF93F00E15E46 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424EB6820BEF93F00E15E46 /* Alarm.swift */; };
 		0424EB6B20BEF96400E15E46 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424EB6A20BEF96400E15E46 /* Action.swift */; };
 		0424EB6D20BF022900E15E46 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424EB6C20BF022900E15E46 /* AlarmTableViewCell.swift */; };
-		0424EB6F20BF0FAE00E15E46 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424EB6E20BF0FAE00E15E46 /* AlarmViewController.swift */; };
-		0424EB7120C038AE00E15E46 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0424EB7020C038AE00E15E46 /* sound.mp3 */; };
+		0424EB6F20BF0FAE00E15E46 /* EditAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424EB6E20BF0FAE00E15E46 /* EditAlarmViewController.swift */; };
+		0424EB7120C038AE00E15E46 /* defaultSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0424EB7020C038AE00E15E46 /* defaultSound.mp3 */; };
+		133EB7D72411B16F007E6614 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EB7D62411B16F007E6614 /* CDManager.swift */; };
+		133EB7DB2411B422007E6614 /* CDAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133EB7DA2411B422007E6614 /* CDAlarm.swift */; };
+		134D8CDD241399B900C75773 /* NManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D8CDC241399B900C75773 /* NManagerDelegate.swift */; };
+		134D8CDF2413BE6B00C75773 /* AlarmViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D8CDE2413BE6B00C75773 /* AlarmViewControllerDelegate.swift */; };
+		134D8CE12413BE8600C75773 /* AlarmCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D8CE02413BE8600C75773 /* AlarmCellDelegate.swift */; };
+		134D8CE32413C17E00C75773 /* evilSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 134D8CE22413C17E00C75773 /* evilSound.mp3 */; };
+		134D8CE52413D88700C75773 /* NotificationCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D8CE42413D88700C75773 /* NotificationCreator.swift */; };
+		134D8CEE2413F21A00C75773 /* WakyZzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134D8CED2413F21A00C75773 /* WakyZzzTests.swift */; };
+		1358406D2411A44000B6DCC7 /* NManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358406C2411A44000B6DCC7 /* NManager.swift */; };
+		135840702411A71700B6DCC7 /* WakyZzz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1358406E2411A71700B6DCC7 /* WakyZzz.xcdatamodeld */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		134D8CF02413F21B00C75773 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0424EB4820BEF89000E15E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0424EB4F20BEF89000E15E46;
+			remoteInfo = WakyZzz;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0424EB5020BEF89000E15E46 /* WakyZzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakyZzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,12 +50,31 @@
 		0424EB6820BEF93F00E15E46 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		0424EB6A20BEF96400E15E46 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		0424EB6C20BF022900E15E46 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
-		0424EB6E20BF0FAE00E15E46 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
-		0424EB7020C038AE00E15E46 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		0424EB6E20BF0FAE00E15E46 /* EditAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmViewController.swift; sourceTree = "<group>"; };
+		0424EB7020C038AE00E15E46 /* defaultSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = defaultSound.mp3; sourceTree = "<group>"; };
+		133EB7D62411B16F007E6614 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		133EB7DA2411B422007E6614 /* CDAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAlarm.swift; sourceTree = "<group>"; };
+		134D8CDC241399B900C75773 /* NManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NManagerDelegate.swift; sourceTree = "<group>"; };
+		134D8CDE2413BE6B00C75773 /* AlarmViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewControllerDelegate.swift; sourceTree = "<group>"; };
+		134D8CE02413BE8600C75773 /* AlarmCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCellDelegate.swift; sourceTree = "<group>"; };
+		134D8CE22413C17E00C75773 /* evilSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = evilSound.mp3; sourceTree = "<group>"; };
+		134D8CE42413D88700C75773 /* NotificationCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCreator.swift; sourceTree = "<group>"; };
+		134D8CEB2413F21A00C75773 /* WakyZzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakyZzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		134D8CED2413F21A00C75773 /* WakyZzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakyZzzTests.swift; sourceTree = "<group>"; };
+		134D8CEF2413F21B00C75773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1358406C2411A44000B6DCC7 /* NManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NManager.swift; sourceTree = "<group>"; };
+		1358406F2411A71700B6DCC7 /* WakyZzz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WakyZzz.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0424EB4D20BEF89000E15E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134D8CE82413F21A00C75773 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0424EB5220BEF89000E15E46 /* WakyZzz */,
+				134D8CEC2413F21A00C75773 /* WakyZzzTests */,
 				0424EB5120BEF89000E15E46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0424EB5020BEF89000E15E46 /* WakyZzz.app */,
+				134D8CEB2413F21A00C75773 /* WakyZzzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,18 +105,16 @@
 		0424EB5220BEF89000E15E46 /* WakyZzz */ = {
 			isa = PBXGroup;
 			children = (
+				134D8CE62413D89000C75773 /* Creator */,
+				134D8CDB241399A200C75773 /* Protocols */,
+				1358406B2411A42E00B6DCC7 /* Manager */,
 				1305254223FDC7120031C393 /* Extension */,
 				1305253F23FDC58D0031C393 /* Ressources */,
 				1305254123FDC5D00031C393 /* Storyboards */,
 				1305253E23FDC57C0031C393 /* Controller */,
 				1305253C23FDC5720031C393 /* Model */,
 				1305253D23FDC5770031C393 /* View */,
-				0424EB6820BEF93F00E15E46 /* Alarm.swift */,
-				0424EB6A20BEF96400E15E46 /* Action.swift */,
 				0424EB5320BEF89000E15E46 /* AppDelegate.swift */,
-				0424EB5520BEF89000E15E46 /* AlarmsViewController.swift */,
-				0424EB6C20BF022900E15E46 /* AlarmTableViewCell.swift */,
-				0424EB6E20BF0FAE00E15E46 /* AlarmViewController.swift */,
 				0424EB5F20BEF89100E15E46 /* Info.plist */,
 			);
 			path = WakyZzz;
@@ -84,6 +123,10 @@
 		1305253C23FDC5720031C393 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0424EB6820BEF93F00E15E46 /* Alarm.swift */,
+				0424EB6A20BEF96400E15E46 /* Action.swift */,
+				133EB7DA2411B422007E6614 /* CDAlarm.swift */,
+				1358406E2411A71700B6DCC7 /* WakyZzz.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +134,7 @@
 		1305253D23FDC5770031C393 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0424EB6C20BF022900E15E46 /* AlarmTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +142,8 @@
 		1305253E23FDC57C0031C393 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0424EB5520BEF89000E15E46 /* AlarmsViewController.swift */,
+				0424EB6E20BF0FAE00E15E46 /* EditAlarmViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,7 +160,8 @@
 		1305254023FDC5970031C393 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				0424EB7020C038AE00E15E46 /* sound.mp3 */,
+				0424EB7020C038AE00E15E46 /* defaultSound.mp3 */,
+				134D8CE22413C17E00C75773 /* evilSound.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -133,6 +180,42 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		134D8CDB241399A200C75773 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				134D8CDC241399B900C75773 /* NManagerDelegate.swift */,
+				134D8CDE2413BE6B00C75773 /* AlarmViewControllerDelegate.swift */,
+				134D8CE02413BE8600C75773 /* AlarmCellDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		134D8CE62413D89000C75773 /* Creator */ = {
+			isa = PBXGroup;
+			children = (
+				134D8CE42413D88700C75773 /* NotificationCreator.swift */,
+			);
+			path = Creator;
+			sourceTree = "<group>";
+		};
+		134D8CEC2413F21A00C75773 /* WakyZzzTests */ = {
+			isa = PBXGroup;
+			children = (
+				134D8CED2413F21A00C75773 /* WakyZzzTests.swift */,
+				134D8CEF2413F21B00C75773 /* Info.plist */,
+			);
+			path = WakyZzzTests;
+			sourceTree = "<group>";
+		};
+		1358406B2411A42E00B6DCC7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1358406C2411A44000B6DCC7 /* NManager.swift */,
+				133EB7D62411B16F007E6614 /* CDManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,18 +238,40 @@
 			productReference = 0424EB5020BEF89000E15E46 /* WakyZzz.app */;
 			productType = "com.apple.product-type.application";
 		};
+		134D8CEA2413F21A00C75773 /* WakyZzzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 134D8CF22413F21B00C75773 /* Build configuration list for PBXNativeTarget "WakyZzzTests" */;
+			buildPhases = (
+				134D8CE72413F21A00C75773 /* Sources */,
+				134D8CE82413F21A00C75773 /* Frameworks */,
+				134D8CE92413F21A00C75773 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134D8CF12413F21B00C75773 /* PBXTargetDependency */,
+			);
+			name = WakyZzzTests;
+			productName = WakyZzzTests;
+			productReference = 134D8CEB2413F21A00C75773 /* WakyZzzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0424EB4820BEF89000E15E46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Olga Volkova OC";
 				TargetAttributes = {
 					0424EB4F20BEF89000E15E46 = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					134D8CEA2413F21A00C75773 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 0424EB4F20BEF89000E15E46;
 					};
 				};
 			};
@@ -184,6 +289,7 @@
 			projectRoot = "";
 			targets = (
 				0424EB4F20BEF89000E15E46 /* WakyZzz */,
+				134D8CEA2413F21A00C75773 /* WakyZzzTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,10 +299,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0424EB7120C038AE00E15E46 /* sound.mp3 in Resources */,
+				0424EB7120C038AE00E15E46 /* defaultSound.mp3 in Resources */,
 				0424EB5E20BEF89100E15E46 /* LaunchScreen.storyboard in Resources */,
 				0424EB5B20BEF89100E15E46 /* Assets.xcassets in Resources */,
 				0424EB5920BEF89000E15E46 /* Main.storyboard in Resources */,
+				134D8CE32413C17E00C75773 /* evilSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134D8CE92413F21A00C75773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,14 +323,38 @@
 			files = (
 				0424EB5620BEF89000E15E46 /* AlarmsViewController.swift in Sources */,
 				0424EB6D20BF022900E15E46 /* AlarmTableViewCell.swift in Sources */,
-				0424EB6F20BF0FAE00E15E46 /* AlarmViewController.swift in Sources */,
+				0424EB6F20BF0FAE00E15E46 /* EditAlarmViewController.swift in Sources */,
 				0424EB5420BEF89000E15E46 /* AppDelegate.swift in Sources */,
+				1358406D2411A44000B6DCC7 /* NManager.swift in Sources */,
 				0424EB6B20BEF96400E15E46 /* Action.swift in Sources */,
+				133EB7DB2411B422007E6614 /* CDAlarm.swift in Sources */,
+				135840702411A71700B6DCC7 /* WakyZzz.xcdatamodeld in Sources */,
+				133EB7D72411B16F007E6614 /* CDManager.swift in Sources */,
+				134D8CDF2413BE6B00C75773 /* AlarmViewControllerDelegate.swift in Sources */,
+				134D8CE12413BE8600C75773 /* AlarmCellDelegate.swift in Sources */,
+				134D8CE52413D88700C75773 /* NotificationCreator.swift in Sources */,
 				0424EB6920BEF93F00E15E46 /* Alarm.swift in Sources */,
+				134D8CDD241399B900C75773 /* NManagerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		134D8CE72413F21A00C75773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134D8CEE2413F21A00C75773 /* WakyZzzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134D8CF12413F21B00C75773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0424EB4F20BEF89000E15E46 /* WakyZzz */;
+			targetProxy = 134D8CF02413F21B00C75773 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0424EB5720BEF89000E15E46 /* Main.storyboard */ = {
@@ -289,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -343,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -359,12 +497,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KK37S6N26;
 				INFOPLIST_FILE = WakyZzz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.WakyZzz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RaV.WakyZzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -378,15 +516,60 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KK37S6N26;
 				INFOPLIST_FILE = WakyZzz/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.openclassrooms.WakyZzz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RaV.WakyZzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		134D8CF32413F21B00C75773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KK37S6N26;
+				INFOPLIST_FILE = WakyZzzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = RaV.WakyZzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakyZzz.app/WakyZzz";
+			};
+			name = Debug;
+		};
+		134D8CF42413F21B00C75773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KK37S6N26;
+				INFOPLIST_FILE = WakyZzzTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = RaV.WakyZzzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakyZzz.app/WakyZzz";
 			};
 			name = Release;
 		};
@@ -411,7 +594,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		134D8CF22413F21B00C75773 /* Build configuration list for PBXNativeTarget "WakyZzzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				134D8CF32413F21B00C75773 /* Debug */,
+				134D8CF42413F21B00C75773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1358406E2411A71700B6DCC7 /* WakyZzz.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1358406F2411A71700B6DCC7 /* WakyZzz.xcdatamodel */,
+			);
+			currentVersion = 1358406F2411A71700B6DCC7 /* WakyZzz.xcdatamodel */;
+			path = WakyZzz.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0424EB4820BEF89000E15E46 /* Project object */;
 }
