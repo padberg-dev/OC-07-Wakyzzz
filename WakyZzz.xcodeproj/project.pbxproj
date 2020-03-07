@@ -108,7 +108,6 @@
 				134D8CE62413D89000C75773 /* Creator */,
 				134D8CDB241399A200C75773 /* Protocols */,
 				1358406B2411A42E00B6DCC7 /* Manager */,
-				1305254223FDC7120031C393 /* Extension */,
 				1305253F23FDC58D0031C393 /* Ressources */,
 				1305254123FDC5D00031C393 /* Storyboards */,
 				1305253E23FDC57C0031C393 /* Controller */,
@@ -173,13 +172,6 @@
 				0424EB5720BEF89000E15E46 /* Main.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		1305254223FDC7120031C393 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		134D8CDB241399A200C75773 /* Protocols */ = {
