@@ -27,35 +27,43 @@ class WakyZzzTests: XCTestCase {
     }
     
     func testEverything() {
-        saveAlarm()
-        addedNotifications()
+        savingAlarm()
+        addingNotifications()
+        loadingAlarm()
         removeLocalNotification()
         removeAllAlarmData()
     }
     
-    func saveAlarm() {
+    func savingAlarm() {
         
         let alarm = Alarm()
         alarm.time = 28800
         alarm.enabled = true
         alarm.repeatDays = [false, false, false, false, false, false, false]
         // Is this alarm oneTime Alarm?
+        
         XCTAssertEqual(alarm.repeating, "One time alarm", "It should be One Time Alarm")
         
         cdManager.addOrUpdateAlarm(alarm)
         nManager.addAlarmNotification(alarm)
     }
     
-    func addedNotifications() {
-        print ("add notification")
+    func addingNotifications() {
         
-        let expN = expectation(description: "Add Notifications")
+        let expN = expectation(description: "Add Notification")
         center.getPendingNotificationRequests { (notifications) in
             
             XCTAssertEqual(notifications.count, 1, "There should be 1 local notifications set")
             expN.fulfill()
         }
         waitForExpectations(timeout: 2)
+    }
+    
+    func loadingAlarm() {
+        
+        let alarm = cdManager.loadAllAlarms()
+        
+        XCTAssert(alarm.count == 1, "No alarm in Databse")
     }
     
     func removeLocalNotification() {
