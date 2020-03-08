@@ -16,7 +16,7 @@ class AlarmsViewController: UIViewController {
     
     // MARK: - Private Parameters
     
-    private var alarms = [Alarm]()
+    public var alarms = [Alarm]()
     private var editingIndexPath: IndexPath?
     
     // MARK: - VC Life Cycle Methods
@@ -45,7 +45,7 @@ class AlarmsViewController: UIViewController {
         tableView.reloadData()
     }
     
-    private func sortAlarms() {
+    public func sortAlarms() {
         alarms.sort(by: { $0.time < $1.time })
     }
     
@@ -86,7 +86,7 @@ class AlarmsViewController: UIViewController {
     
     // MARK: - Navigation Methods
     
-    private func presentAlarmViewController(alarm: Alarm?) {
+    public func presentAlarmViewController(alarm: Alarm?) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let popupViewController = storyboard.instantiateViewController(withIdentifier: "DetailNavigationController") as! UINavigationController

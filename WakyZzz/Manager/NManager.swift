@@ -16,7 +16,7 @@ class NManager: NSObject {
     // Will be used as a connection to tableView
     public weak var delegate: NManagerDelegate?
     
-    private let notificationCenter = UNUserNotificationCenter.current()
+    public let notificationCenter = UNUserNotificationCenter.current()
     private let creator: NotificationCreator = NotificationCreator()
     private var isNotificationEnabled: Bool = false
     
@@ -101,7 +101,7 @@ class NManager: NSObject {
         }
     }
     
-    private func disableOneTimeAlarm(id: String) {
+    public func disableOneTimeAlarm(id: String) {
         
         let context = AppDelegate.context
         
@@ -223,7 +223,7 @@ class NManager: NSObject {
         UIApplication.shared.open(URL.init(string: strURL)!, options: [:], completionHandler: nil)
     }
     
-    private func deleteNotification(id: String) {
+    public func deleteNotification(id: String) {
 
         //if delete action remove all notifications with same ID
         notificationCenter.removePendingNotificationRequests(withIdentifiers: [id])
@@ -234,8 +234,6 @@ class NManager: NSObject {
 // MARK: - UNUserNotificationCenterDelegate Methods
 
 extension NManager: UNUserNotificationCenterDelegate {
-    
-    
     
     // Fired when app is in foreground
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
